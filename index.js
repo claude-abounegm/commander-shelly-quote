@@ -1,15 +1,19 @@
 'use strict';
 
 /**
- * 
- * @param {string} str 
- * @param {boolean} [allowVars] 
+ *
+ * @param {string} str
+ * @param {boolean} [allowVars]
  */
 function quote(str, allowVars = false) {
     if (Array.isArray(str)) {
         return str.map(str => quote(str, allowVars)).join(' ');
     } else if (typeof str !== 'string') {
         str = String(str);
+    }
+
+    if (str === '') {
+        return "''";
     }
 
     // If we only have double quotes and spaces, and no
@@ -38,9 +42,9 @@ function quote(str, allowVars = false) {
 }
 
 /**
- * 
- * @param {string} str 
- * @param {boolean} allowVars 
+ *
+ * @param {string} str
+ * @param {boolean} [allowVars]
  */
 function doubleQuote(str, allowVars = false) {
     const escapedChars = ['"', '\\', '`', '!'];

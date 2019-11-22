@@ -1,3 +1,3 @@
-var quote = require('../').quote;
-var s = quote([ 'a', 'b c d', '$f', '"g"' ]);
+const quote = require('../').quote;
+const s = quote(['a', 'b c d', '$f', '"g"']);
 console.log(s);

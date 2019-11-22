@@ -1,8 +1,8 @@
 {
-    "name": "shell-quote",
+    "name": "commander-shelly-quote",
     "main": "index.js",
     "description": "Quote shell commands",
-    "version": "2.0.0",
+    "version": "1.0.0",
     "scripts": {
         "test": "tape test/*.js"
     },
@@ -10,12 +10,12 @@
         "name": "Claude Abounegm",
         "email": "claude.abounegm@gmail.com"
     },
-    "bugs": "https://github.com/claude-abounegm/node-shell-quote/issues",
+    "bugs": "https://github.com/claude-abounegm/commander-shelly-quote/issues",
     "repository": {
         "type": "git",
-        "url": "https://github.com/claude-abounegm/node-shell-quote.git"
+        "url": "https://github.com/claude-abounegm/commander-shelly-quote.git"
     },
-    "homepage": "https://github.com/claude-abounegm/node-shell-quote",
+    "homepage": "https://github.com/claude-abounegm/commander-shelly-quote",
     "keywords": [
         "command",
         "quote",
@@ -23,6 +23,10 @@
     ],
     "license": "MIT",
     "devDependencies": {
-        "tape": "4"
+        "tape": "4",
+        "prettier": "^1.18.2",
+        "eslint": "^6.1.0",
+        "eslint-config-prettier": "^6.0.0",
+        "eslint-plugin-prettier": "^3.1.0"
     }
 }
