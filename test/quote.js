@@ -25,9 +25,9 @@ test('quote', function (t) {
 });
 
 test('quote ops', function (t) {
-    t.equal(quote([ 'a', { op: '|' }, 'b' ]), 'a \\| b');
+    t.equal(quote([ 'a',  '|' , 'b' ]), 'a \\| b');
     t.equal(
-        quote([ 'a', { op: '&&' }, 'b', { op: ';' }, 'c' ]),
+        quote([ 'a', '&&', 'b', ';' , 'c' ]),
         'a \\&\\& b \\; c'
     );
     t.end();
