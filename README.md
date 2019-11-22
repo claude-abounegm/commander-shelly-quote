@@ -1,7 +1,7 @@
-# shell-quote
+# commander-shelly-quote
 
 Quote shell commands.
 
-# license
+# License
 
 MIT
